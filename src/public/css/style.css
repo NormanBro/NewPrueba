@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Container{
+    width: 100%;
+    height: 100%;
+    min-width: 50%;
+    margin-top: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    gap: 50px;
+}
+
+.Container-Product{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    width: 100%;
+    margin: 0 15px;
+    color: rgb(227, 228, 230);
+    padding: 10px;
+    min-width: 80%;
+    border-radius: 20px;
+    
+}
+
+.Contenedor-Imagen {
+    width: 100%;
+    height: 20vh;
+}
+
+.Contenedor-Imagen img{
+    border: 2px solid rgb(227, 228, 230);
+    border-radius: 20px;
+}
+
+.Contenedor-Textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.Contenedor-Textos p{
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.Contenedor-Boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor-Boton a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+}
+.Contenedor-Boton .primary{
+    background-color: rgb(35, 120, 248);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(119, 164, 223);
+}
+
+.Contenedor-Boton .primary:active{
+    background-color: rgb(119, 164, 223);
+    box-shadow: none;
+}
+
+.Contenedor-Boton .danger{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(223, 119, 119);
+}
+
+.Contenedor-Boton .danger:active{
+    background-color: rgb(223, 119, 119);
+    box-shadow: none;
+}
+
+.Navegacion{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 20px;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(227, 228, 230);
+}
+.btn{
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+.barra{
+    width: 20%;
+    height: 38rem;
+    position: absolute;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    bottom: 8%;
+    transform: translateX(-100%);
+    transition: all .5s;
+}
+.barra .form-add{
+    margin-top: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.barra .form-add h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(227, 228, 230);
+}
+.barra .form-add input{
+    margin-bottom: 10px;
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #12c2e9;
+    outline: 0px;
+    color: rgb(227, 228, 230);
+}
+
+.barra .form-add .up{
+    margin-top: 20px;
+    background-color: #12c2e9;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.barra .form-add .up:hover{
+    background-color: #00d0ff;
+
+}
+
+.barra .form-add .close{
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.barra .form-add .close:hover{
+    background-color: rgb(230, 67, 67);
+
+}
